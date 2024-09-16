@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background: url(Bg.gif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px
+}
+
+.Container{
+    width: 700px;
+    border: 2px solid whitesmoke;
+    backdrop-filter: blur(5px);
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.Container h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 26px;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+.social-login{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.google-btn, .apple-btn, .facebook-btn, .instagram-btn{
+    width: 25%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 500;
+    line-height: 1;
+    transition: all .4s ease-in-out;
+    text-decoration: underline;
+}
+
+.google-btn:hover, .apple-btn:hover, .facebook-btn:hover, .instagram-btn:hover{
+    transform: scale(1.05);
+}
+
+i[class^='bx']{
+    font-size: 15px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Container, .form-input{
+    position: relative;
+    width: 40%;
+    margin: 20px 0;
+}
+
+.form-input, input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: underline;
+    padding: 10px 10px 10px 10px;
+}
+
+.form-input input::placeholder{
+    color: whitesmoke;
+}
+
+svg{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transform: translate(-50%);
+}
+
+.Container .btn{
+    width: 100%;
+    height: 45px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    text-decoration: underline;
+    font-weight: 550;
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.login-link p{
+    color: whitesmoke
+}
+
+.login-link p a{
+    color: whitesmoke;
+    font-weight: 550;
+}
+
+.login-link p a:hover{
+    text-decoration: underline;
+}
+
+.Container .login-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+
+@media only screen and (max-width: 520px){
+    .Container{
+        width: 90%;
+        padding: 30px 10px;
+    }
+}
